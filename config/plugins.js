@@ -45,11 +45,11 @@ export default function ({ ENV, DEV, PROD }) {
       disable: false,
       allChunks: true,
     }),
-    new ChunkManifestPlugin({
-       filename: 'manifest.json',
-       manifestVariable: 'webpackManifest',
-       inlineManifest: false
-    }),
+//     new ChunkManifestPlugin({
+//        filename: 'manifest.json',
+//        manifestVariable: 'webpackManifest',
+//        inlineManifest: false
+//     }),
     new webpack.DefinePlugin({
        'process.env.NODE_ENV': JSON.stringify(ENV),
        __DEV__: JSON.stringify(DEV),
